@@ -1,0 +1,39 @@
+{
+    "name": "domain/ux",
+    "description": "Domain UX",
+    "authors": [
+        {
+            "name": "Biyi Akinpelu",
+            "email": "bileckme@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "jenssegers/ab": "v0.2.0",
+        "jenssegers/agent": "v2.5.2",
+        "jenssegers/chef": "dev-master",
+        "jenssegers/date": "v3.2.12",
+        "jenssegers/imagehash": "v0.4.2",
+        "jenssegers/mongodb-sentry": "v1.0.1",
+        "jenssegers/mongodb-session": "v1.1.0",
+        "jenssegers/oauth": "v2.0.2",
+        "guzzlehttp/guzzle": "6.2.2"
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "1.11.x-dev",
+        "jlapp/swaggervel": "2.0.x-dev"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "files": [
+            "src/helpers/common.php"
+        ],
+        "psr-4": {
+            "Domain\\UX\\": "src/Domain/UX"
+        }
+    },
+    "minimum-stability": "stable"
+}
